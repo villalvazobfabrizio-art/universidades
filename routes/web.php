@@ -37,8 +37,3 @@ Route::get('/carreras/{carrera}', function (Carrera $carrera) {
 })->name('carreras.show');
 
 
-//Ruta Contacto
-Route::get('/', function () {
-    $contactos = contacto::latest()->get();
-    return view('contacto', compact('contactos'));
-});
